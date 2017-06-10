@@ -10,7 +10,7 @@ class FECData(val transactions: Iterator[Transaction])
 
 object FECData {
 
-  val dataDirectory = "src/main/resources/data"
+  val dataDirectory = "src/main/resources/data/"
 
   private val dateParser = new SimpleDateFormat("DD-MMM-YY")
 
@@ -26,7 +26,7 @@ object FECData {
         case "" => None
         case v => Some(v)
       }
-      amount = (row("Aamount").toDouble*100).toInt
+      amount = (row("amount").toDouble*100).toInt
       date = new Date(dateParser.parse(row("date")).getTime)
     } yield Transaction(id, candidate, contributor, state, occupation, amount, date)
 

@@ -37,10 +37,20 @@ object SlickDemo {
     Await.result(result, Duration.Inf)
   }
 
+  def queryTotalDonations: Map[String, Long] = {
+    val grouped = Tables.transactions.groupBy(_.candidate)
+    val aggregated = grouped.map {
+      case (candidate, group) => (candidate -> group.map(_.amount).sum)
+    }.result
+    val result = db.run(aggregated)
+    Await.result(result, Duration.Inf).toMap.mapValues { _.getOrElse(0L) }
+  }
+
   def main(args: Array[String]): Unit = {
     createTable
     insertFecData
     queryData.take(5).foreach(println)
+    queryTotalDonations.foreach(println)
   }
 
 }
