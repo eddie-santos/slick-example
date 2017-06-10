@@ -15,8 +15,8 @@ object Tables {
     def amount = column[Long]("amount")
     def date = column[Date]("date")
 
-    def * = (id, candidate, contributor, contributorState, contributorOccupation,
+    def * = (id.?, candidate, contributor, contributorState, contributorOccupation,
       amount, date) <> (Transaction.tupled, Transaction.unapply)
   }
-  
+
 }
