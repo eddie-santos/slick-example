@@ -20,4 +20,8 @@ object SlickDemo {
     Await.result(setupFuture, Duration.Inf)
   }
 
+  def main(args: Array[String]): Unit = {
+    createTable
+  }
+
 }

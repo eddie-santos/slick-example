@@ -1,15 +1,43 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/Users/Eddie/projects/slick-example/src/main/scala/FECData.scala, /Users/Eddie/projects/slick-example/src/main/scala/SlickDemo.scala, /Users/Eddie/projects/slick-example/src/main/scala/Tables.scala, /Users/Eddie/projects/slick-example/src/main/scala/Transaction.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/Users/Eddie/projects/slick-example/src/main/scala/FECData.scala, /Users/Eddie/projects/slick-example/src/main/scala/SlickDemo.scala, /Users/Eddie/projects/slick-example/src/main/scala/Tables.scala, /Users/Eddie/projects/slick-example/src/main/scala/Transaction.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/Eddie/projects/slick-example/src/main/scala/FECData.scala, /Users/Eddie/projects/slick-example/src/main/scala/SlickDemo.scala, /Users/Eddie/projects/slick-example/src/main/scala/Tables.scala, /Users/Eddie/projects/slick-example/src/main/scala/Transaction.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/Eddie/projects/slick-example/src/main/scala/FECData.scala, /Users/Eddie/projects/slick-example/src/main/scala/SlickDemo.scala, /Users/Eddie/projects/slick-example/src/main/scala/Tables.scala, /Users/Eddie/projects/slick-example/src/main/scala/Transaction.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 4 sources: invalidated sources (4) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 4 Scala sources to /Users/Eddie/projects/slick-example/target/scala-2.12/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.15:component from component compiler for Scala 2.12.2[0m
+[0m[[0minfo[0m] [0m'compiler-interface' not yet compiled for Scala 2.12.2. Compiling...[0m
+[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.12.2  with arguments: [0m
+[0m[[0mdebug[0m] [0m	-nowarn[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_a88c8b67[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/classes:/Users/Eddie/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.2.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/Eddie/.sbt/boot/scala-2.10.6/org.scala-sbt/sbt/0.13.15/xsbti/interface-0.13.15.jar:/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_687b7edb/srcs/org.scala-sbt/compiler-interface/compiler-interface-0.13.15-sources.jar:/Users/Eddie/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.2.jar:/Users/Eddie/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.2.jar:/Users/Eddie/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar:/Users/Eddie/.ivy2/cache/jline/jline/jars/jline-2.14.3.jar[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/API.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Analyzer.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Command.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Compat.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/CompilerInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/ConsoleInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/DelegatingReporter.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Dependency.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/ExtractAPI.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/ExtractUsedNames.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/GlobalHelpers.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/LocateClassFile.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Log.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/Message.scala[0m
+[0m[[0mdebug[0m] [0m	/var/folders/nb/24zbnz2d6fz27vyvdtdn9btr0000gn/T/sbt_950c353/xsbt/ScaladocInterface.scala[0m
