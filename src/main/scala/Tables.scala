@@ -19,4 +19,6 @@ object Tables {
       amount, date) <> (Transaction.tupled, Transaction.unapply)
   }
 
+  val transactions = TableQuery[Transactions]
+
 }

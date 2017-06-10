@@ -9,7 +9,10 @@ import com.github.tototoshi.csv._
 class FECData(val transactions: Iterator[Transaction])
 
 object FECData {
+
   val dataDirectory = "src/main/resources/data"
+
+  private val dateParser = new SimpleDateFormat("DD-MMM-YY")
 
   private def load(fileName: String): FECData = {
     val reader = CSVReader.open(new File(dataDirectory + fileName))
