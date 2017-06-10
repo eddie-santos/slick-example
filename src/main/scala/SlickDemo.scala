@@ -9,4 +9,15 @@ import scala.concurrent.duration.Duration
 
 object SlickDemo {
 
+  val db: Database = Database.forConfig("pgConfig")
+
+  def createTable: Unit = {
+    val setup = DBIO.seq(
+      Tables.transactions.schema.drop,
+      Tables.transactions.schema.create
+    )
+    val setupFuture = db.run(setup)
+    Await.result(setupFuture, Duration.Inf)
+  }
+
 }
