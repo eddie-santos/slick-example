@@ -20,8 +20,27 @@ object SlickDemo {
     Await.result(setupFuture, Duration.Inf)
   }
 
+  def insertFecData: Unit = {
+    val fecData = FECData.loadOhio
+    val transactions: Iterator[Transaction] = fecData.transactions
+
+    val insert = DBIO.seq(
+      Tables.transactions ++= transactions.toSeq
+    )
+    val insertFuture = db.run(insert)
+    Await.result(insertFuture, Duration.Inf)
+  }
+
+  def queryData: Seq[Transaction] = {
+    val action = Tables.transactions.result
+    val result: Future[Seq[Transaction]] = db.run(action)
+    Await.result(result, Duration.Inf)
+  }
+
   def main(args: Array[String]): Unit = {
     createTable
+    insertFecData
+    queryData.take(5).foreach(println)
   }
 
 }
